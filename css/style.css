@@ -29,6 +29,18 @@ body{
  	margin: 0 auto 0 auto;/*Para centrarlo */
 }
 
+.fondo-gris{
+	background-color: #282828;
+}
+
+.color-blanco{
+	color: #ffffff;
+}
+
+.centrar{
+	text-align: center;
+}
+
 h1, h2, h3, h4{font-family:'Montserrat'}
 
 h1{font-size: 4.8rem;}
@@ -43,6 +55,9 @@ img{
 	max-width: 100%; /*Para que las imagenes sean responsive */
 }
 
+.mt-30{/*Utilidad de margin top 30pixeles */
+	margin-top: 3rem;
+}
 .centrar-imagen{
 	display: block;
 	margin: auto;
@@ -121,3 +136,33 @@ header .barra h1{
 .verde{
 	background-color: #007f2d;
 }
+
+/* Contenido de la pagina principal */
+.contenido-principal{
+	display: flex; /* Activo flexbox */
+	flex-wrap: wrap;
+}
+
+.blog,
+.categoria{
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 100%;/* Toma todo el espacio disponible */
+}
+
+.form-group{
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+@media (min-width: 768px){
+	.contenido-principal{
+		justify-content: space-between;
+	}
+	.blog{
+		flex-basis: 66.6%;
+	}
+	.categoria{
+		flex-basis: calc(33.3% - 4rem);
+	}
+} 
