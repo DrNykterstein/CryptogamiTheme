@@ -1,0 +1,123 @@
+/* Reset para REM */
+html{
+	font-size: 62.5%; /* Reset para REM */
+	/* 62.5 = 10px de 16px */
+	box-sizing: border-box;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+/*Estilos generales */
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-size: 1.6rem;
+	line-height: 2;
+	font-family: 'Montserrat', san-serif;
+}
+
+/* Mis utilidades */
+.contenedor{
+	width: 95%;
+ 	max-width:120rem;/* Altura Maxima, toma todo el espacio disponible pero no te pases de 
+ 	1200px */
+ 	margin: 0 auto 0 auto;/*Para centrarlo */
+}
+
+h1, h2, h3, h4{font-family:'Montserrat'}
+
+h1{font-size: 4.8rem;}
+
+h2{font-size: 4rem;}
+
+h3{font-size: 3.2rem;}
+
+h4{font-size: 2.8rem;}
+
+img{
+	max-width: 100%; /*Para que las imagenes sean responsive */
+}
+
+.centrar-imagen{
+	display: block;
+	margin: auto;
+}
+
+.imagen-mediana{
+	height: 25rem;
+	width: 25rem;
+}
+
+.centrar-texto{
+	text-align: center;
+}
+
+.no-margin{
+	margin: 0;
+}
+
+/* ---- HEADER ----- */
+.site-header{
+	background-color: #282828;/*Color de fondo */
+	height:100vh;/*Alto de la imagen, 100vh para cubrir la altura de cualquier pantalla*/
+	min-height: 60rem;/*Minimo */
+}
+
+
+/*Mensaje del header */
+header .barra h1{
+	color: #ffffff;/*Color de la letra blanco */
+	text-transform: uppercase;/*Para convertirlas a mayuscula */
+	font-size: 4rem;/*Para modificar el tamaño */
+	letter-spacing: .5rem;/*Separación entre lineas */
+}
+
+
+.barra{
+	display: flex;/*Para habilitar FlexBox */
+	/*Le paso la direccion a la que debe ir */
+	flex-direction: column;/*column de arriba hacia bajo */
+	justify-content: space-between;/*Para alinear el contenido verticalmente */
+	text-align: center;
+}
+
+/* Raya verde o pseudo elemento */
+.barra h1::after{/*un psuedo elemento */
+	content: '';
+	display: block;/*Para poder aplicarle margen */
+	margin: 0 auto;/*Para centarlo */
+	width: 30rem;/*Ancho*/
+	height: .3rem;/*Altura */
+	background-color:#007f2d;
+	
+}
+
+/* Boton del header */
+.alinear-derecha{
+	display: flex;
+	justify-content: center;
+}
+
+.botones{
+	color:#ffffff;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 1.8rem;
+	font-weight: 700;
+	padding: 1rem 3rem;
+	display: inline-block;
+	margin-top: 10rem;
+	text-align: center;
+	border: none;
+	display: block;
+	flex: 0 0 auto;
+}
+
+.verde{
+	background-color: #007f2d;
+}
