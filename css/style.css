@@ -58,6 +58,15 @@ img{
 .mt-30{/*Utilidad de margin top 30pixeles */
 	margin-top: 3rem;
 }
+
+.mt-10{
+	margin-top: 1rem;
+}
+
+.pt-20{
+	padding: 2rem;
+}
+
 .centrar-imagen{
 	display: block;
 	margin: auto;
@@ -150,6 +159,7 @@ header .barra h1{
 	flex-basis: 100%;/* Toma todo el espacio disponible */
 }
 
+
 .form-group{
 	padding: 1rem;
 	margin-bottom: 1rem;
@@ -164,5 +174,23 @@ header .barra h1{
 	}
 	.categoria{
 		flex-basis: calc(33.3% - 4rem);
+		
 	}
 } 
+
+/* --- Detalles --- */
+.entrada-blog-destacada{
+	display: flex;
+	flex-direction: column;/*column de arriba hacia bajo */
+	justify-content: row;
+
+}
+
+.entrada-blog-destacada .imagen{
+	
+}
+
+.entrada-blog-destacada .contenido-blog-destacado{
+	flex-basis: calc(33.3% - 4rem);
+	
+}
