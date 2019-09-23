@@ -218,3 +218,49 @@ header .barra h1{
 	flex-basis: calc(33.3% - 4rem);
 	
 }
+/* footer */
+.site-footer{
+	background-color: #282828;
+	padding: 3rem;
+	margin-top: 4rem;
+	text-align: center;
+}
+
+@media (min-width:768px) {
+    .barra-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.site-footer p{
+	color:#007f2d;
+	font-size: 4rem;
+	font-weight: 400;
+}
+
+.site-footer p span{
+	font-weight: 700;
+}
+
+.navegacion a{
+	text-align: center;
+	display: block;
+	font-size: 1.8rem;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* Aplico el MediaQuery */
+@media (min-width: 768px){
+	.navegacion a{
+		display: inline-block;
+		margin-right: 2rem;
+	}
+
+	.navegacion a:last-of-type{
+		margin: 0;
+	}
+}
