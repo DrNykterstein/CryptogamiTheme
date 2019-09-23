@@ -73,9 +73,17 @@ img{
 }
 
 .imagen-mediana{
-	height: 25rem;
-	width: 25rem;
+	height: 15rem;
+	width: 15rem;
 }
+
+@media (min-width: 768px){
+	.imagen-mediana{
+		height: 25rem;
+		width: 25rem;
+	}
+}
+
 
 .centrar-texto{
 	text-align: center;
