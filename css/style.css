@@ -85,6 +85,32 @@ img{
 	margin: 0;
 }
 
+/* Botones */
+.btn{/* Estilos generales del boton */
+	display: block; /*Para que tome todo el espacio disponible */
+	text-align: center;
+	padding: 1rem 3rem;
+	margin: 2rem 0;
+	color:#ffffff;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+@media (min-width: 768px){
+	.btn{
+		display: inline-block;/*para defenir el ancho por medio del padding */
+		font-size: 1.5rem;
+	}
+}
+
+.btn-primary{
+	background-color: #007f2d;
+
+}
+
 /* ---- HEADER ----- */
 .site-header{
 	background-color: #282828;/*Color de fondo */
@@ -158,8 +184,10 @@ header .barra h1{
 	flex-shrink: 0;
 	flex-basis: 100%;/* Toma todo el espacio disponible */
 }
-
-
+.categoria{
+	width: 100%;
+	height: 100%;
+}
 .form-group{
 	padding: 1rem;
 	margin-bottom: 1rem;
@@ -184,10 +212,6 @@ header .barra h1{
 	flex-direction: column;/*column de arriba hacia bajo */
 	justify-content: row;
 
-}
-
-.entrada-blog-destacada .imagen{
-	
 }
 
 .entrada-blog-destacada .contenido-blog-destacado{
