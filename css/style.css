@@ -104,6 +104,17 @@ img{
 .no-margin{
 	margin: 0;
 }
+/* GRID */
+@media (min-width: 768px){
+	.grid{
+		display: flex;
+		justify-content: space-between;
+	}
+	.columnas-6{
+		flex: 0 0 calc(50% - 1rem);
+	}
+}
+
 
 /* Botones */
 .btn{/* Estilos generales del boton */
@@ -258,6 +269,7 @@ header .barra h1{
 	margin-top: 4rem;
 	text-align: center;
 }
+
 
 @media (min-width:768px) {
     .barra-footer{
