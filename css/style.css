@@ -316,3 +316,17 @@ header .barra h1{
 		margin: 0;
 	}
 }
+
+/** Blog y noticias */
+.texto-entrada h4::after{/*un psuedo elemento */
+	content: '';
+	display: block;
+	width: 15rem;
+	height: .3rem;
+	background-color:#007f2d;
+	margin-top:-1rem;
+}
+
+.texto-entrada p span{
+	color:#007f2d;
+}
