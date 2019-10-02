@@ -313,6 +313,12 @@ header .barra h1{
 	text-transform: uppercase;
 }
 
+.navegacion a:hover{
+	background-color: #007f2d;
+	border-radius: 2rem;
+	padding: .5rem;
+}
+
 /* Aplico el MediaQuery */
 @media (min-width: 768px){
 	.navegacion a{
