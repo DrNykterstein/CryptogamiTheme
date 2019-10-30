@@ -1,40 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Cryptogami</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<!--Cabecera  -->
-	<header class="header-nosotros">
-		<div class="contenedor">
-			<div class="barra">
-				<div class="imagen">
-					<a href="index.html"><img src="img/banner_grande.png" class="imagen-pequeña" alt=""></a>
-				</div>
-				<!--Navegacion -->
-				<nav class="navegacion">
-					<a href="articulos.html">Articulos</a>
-					<a href="noticias.html">Noticias</a>
-					<a href="nosotros.html">Nosotros</a>
-				</nav>
-			</div><!-- Clase Barra -->
-		</div><!--Contenedor -->
-	</header>
-	<!--Contenido principal -->
+<?php
+	include 'templates/header.php';
+	include 'templates/navegacion.php';	
+?>
 	
 	<main class="contenedor">
-		<h2 class="centrar">Noticias</h2>
+		<h2 class="centrar">Articulos</h2>
 		<article class="entrada-blog grid">
 			<div class="columnas-4">
 				<img src="img/blog1.jpg" class="mt-20" alt="">
 			</div><!--Columnas 4--->
 
 			<div class="columnas-8 texto-entrada">
-				<h4>Descubren 0-day</h4>
+				<h4>Pentesting con PowerShell</h4>
 				<p>Escrito el <span>16/08/2019</span> por <span>Admin</span></p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nihil ducimus quia quae, non corrupti, blanditiis, mollitia atque maxime adipisci sapiente magni odio soluta temporibus a sequi sunt enim sint?</p>
 				<a href="entrada.html" class="btn btn-primary">Leer Entrada</a>
@@ -47,7 +24,7 @@
 			</div><!--Columnas 4--->
 
 			<div class="columnas-8 texto-entrada">
-				<h4>Vulnerabilidad Critica</h4>
+				<h4>Pentesting con Metasploit</h4>
 				<p>Escrito el <span>16/08/2019</span> por <span>Admin</span></p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nihil ducimus quia quae, non corrupti, blanditiis, mollitia atque maxime adipisci sapiente magni odio soluta temporibus a sequi sunt enim sint?</p>
 				<a href="entrada.html" class="btn btn-primary">Leer Entrada</a>
@@ -60,7 +37,7 @@
 			</div><!--Columnas 4--->
 
 			<div class="columnas-8 texto-entrada">
-				<h4>Famosa empresa recibe un ataque DDoS</h4>
+				<h4>Pentesting con Python</h4>
 				<p>Escrito el <span>16/08/2019</span> por <span>Admin</span></p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nihil ducimus quia quae, non corrupti, blanditiis, mollitia atque maxime adipisci sapiente magni odio soluta temporibus a sequi sunt enim sint?</p>
 				<a href="entrada.html" class="btn btn-primary">Leer Entrada</a>
@@ -73,7 +50,7 @@
 			</div><!--Columnas 4--->
 
 			<div class="columnas-8 texto-entrada">
-				<h4>Brecha de Seguridad</h4>
+				<h4>Hardening de Servidores</h4>
 				<p>Escrito el <span>16/08/2019</span> por <span>Admin</span></p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nihil ducimus quia quae, non corrupti, blanditiis, mollitia atque maxime adipisci sapiente magni odio soluta temporibus a sequi sunt enim sint?</p>
 				<a href="entrada.html" class="btn btn-primary">Leer Entrada</a>
@@ -81,19 +58,6 @@
 		</article>
 	</main><!-- Main -->
 
-
-	<!-- Footer -->
-	<footer class="site-footer">
-		<div class="contenedor">
-			<div class="barra-footer">
-				<p>Crypto<span>gami</span></p>
-				<nav class="navegacion">
-					<a href="articulos.html">Articulos</a>
-					<a href="#">Noticias</a>
-					<a href="articulos.html">nosotros</a>
-				</nav>
-			</div>
-		</div><!-- contenedor -->
-	</footer>
-</body>
-</html>
+<?php
+	include 'templates/footer.php';		
+?>
